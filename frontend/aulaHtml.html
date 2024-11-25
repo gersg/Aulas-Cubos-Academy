@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 01 - Introdução ao HTML</title>
+</head>
+
+<body>
+    <!-- 
+    1. O que é HTML?
+    HTML (HyperText Markup Language) é a linguagem padrão usada para criar páginas web.
+    Ele usa "tags" para estruturar o conteúdo, como cabeçalhos, parágrafos e imagens.
+    -->
+
+    <!-- Estrutura básica do HTML -->
+    <header>
+        <h1>Aula Completa de HTML</h1>
+        <p>Aprenda os fundamentos do HTML com exemplos práticos.</p>
+    </header>
+
+    <!-- 
+    2. Conhecendo as Tags
+    As tags são utilizadas para identificar diferentes partes de um documento HTML.
+    Por exemplo, usamos <h1> para títulos, <p> para parágrafos, etc.
+    -->
+
+    <section>
+        <h2>Tags de Texto</h2>
+        <p>
+            Este é um exemplo de texto com formatação básica:
+            <strong>negrito</strong>, <em>itálico</em> e <u>sublinhado</u>.
+        </p>
+        <h3>Exemplo de Lista:</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </section>
+
+    <!-- 
+    3. Tags Self-Closing
+    Essas tags não precisam de fechamento. Exemplos: <br>, <img>, <hr>.
+    -->
+
+    <section>
+        <h2>Tags Self-Closing</h2>
+        <p>Este texto contém uma <br> quebra de linha.</p>
+        <hr>
+        <p>Este é um exemplo de linha horizontal.</p>
+        <img src="https://via.placeholder.com/150" alt="Exemplo de imagem">
+    </section>
+
+    <!-- 
+    4. Aninhamento e Indentação
+    O aninhamento é quando uma tag está dentro de outra. Indentação é usar espaços ou tabulação para organizar o código.
+    -->
+
+    <section>
+        <h2>Aninhamento e Indentação</h2>
+        <div>
+            <h3>Seção Aninhada</h3>
+            <p>Este parágrafo está dentro de um <strong>div</strong>.</p>
+        </div>
+    </section>
+
+    <!-- 
+    5. Tags Semânticas
+    Essas tags definem o significado do conteúdo, melhorando acessibilidade e SEO.
+    Exemplos: <header>, <section>, <article>, <footer>.
+    -->
+
+    <section>
+        <h2>Tags Semânticas</h2>
+        <article>
+            <h3>Artigo 1</h3>
+            <p>Este é um exemplo de conteúdo dentro de uma tag semântica <strong>&lt;article&gt;</strong>.</p>
+        </article>
+        <article>
+            <h3>Artigo 2</h3>
+            <p>Outro exemplo de uso de tags semânticas.</p>
+        </article>
+    </section>
+
+    <!-- 
+    6. Caminho Absoluto e Relativo
+    Caminho absoluto usa a URL completa. Caminho relativo é baseado na localização do arquivo HTML.
+    -->
+
+    <section>
+        <h2>Caminhos Absolutos e Relativos</h2>
+        <p>
+            Link absoluto para o <a href="https://www.google.com" target="_blank">Google</a>.
+        </p>
+        <p>
+            Link relativo para uma página local:
+            <a href="pagina-local.html">Página Local</a>.
+        </p>
+        <img src="imagens/exemplo.png" alt="Exemplo de Caminho Relativo">
+    </section>
+
+    <!-- 
+    7. Árvores HTML
+    A estrutura do HTML forma uma árvore hierárquica.
+    Abaixo, um exemplo de aninhamento de nós.
+    -->
+
+    <section>
+        <h2>Árvores HTML</h2>
+        <div>
+            <h3>Nó Pai</h3>
+            <p>Nó Filho</p>
+            <div>
+                <h4>Subnó</h4>
+                <p>Outro conteúdo aninhado.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Materiais Complementares-->
+    <footer>
+        <h2>Materiais Complementares</h2>
+        <ul>
+            <li><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">W3Schools</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://html.com/elementos/" target="_blank">HTML.com</a></li>
+        </ul>
+
+    <!-- Exercícios -->
+    <footer>
+        <h2>Exercícios</h2>
+        <ol>
+            <li>Crie uma página com um cabeçalho, dois parágrafos e uma lista.</li>
+            <li>Adicione um link absoluto e outro relativo na sua página.</li>
+            <li>Use tags semânticas para organizar um artigo e uma seção.</li>
+            <li>Inclua uma imagem com caminho relativo e uma linha horizontal.</li>
+            <li>Organize seu código com indentação adequada.</li>
+        </ol>
+    </footer>
+
+    <!-- Mini Projeto -->
+    <footer>
+        <h2>Mini Projeto</h2>
+        <p>Crie uma página pessoal com:</p>
+        <ul>
+            <li>Um cabeçalho com título e navegação.</li>
+            <li>Seção "Sobre Mim" com um parágrafo e uma imagem.</li>
+            <li>Seção de hobbies com uma lista não ordenada.</li>
+            <li>Formulário de contato com campos para nome, e-mail e mensagem.</li>
+            <li>Rodapé com links para redes sociais.</li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

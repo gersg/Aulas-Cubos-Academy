@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubos Academy - Frontend DDST17</title>
+    <!-- Estilo interno para exemplos -->
+    <style>
+        /* Estilo aplicado diretamente na seção para demonstração */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #726c6c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        pre {
+            background-color: #f7f7f7;
+            padding: 15px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSSPT1 - Frontend</h1>
+        <h2>Aluno: Gerson Espíndola</h2>
+        <p>Estilizando páginas web com CSS.</p>
+    </header>
+
+    <!-- O que é CSS? -->
+    <section>
+        <h2>O que é CSS?</h2>
+        <p>CSS significa <strong>Folhas de Estilo em Cascata</strong> e ajuda a separar a estrutura do HTML do design e da apresentação visual.</p>
+    </section>
+
+    <!-- Estrutura do CSS -->
+    <section>
+        <h2>Estrutura do CSS</h2>
+        <p>Exemplo básico de regra CSS:</p>
+        <pre>
+/* Seletor */
+p {
+    /* Declarações */
+    color: blue;
+    font-size: 16px;
+}
+        </pre>
+    </section>
+
+    <!-- Seletores -->
+    <section>
+        <h2>Seletores</h2>
+        <ul>
+            <li><strong>Universal</strong>: Aplica a todos os elementos. Exemplo: <code>* { margin: 0; }</code></li>
+            <li><strong>Tag</strong>: Aplica a uma tag específica. Exemplo: <code>p { color: red; }</code></li>
+            <li><strong>Classe</strong>: Identificada com ".", aplicada a múltiplos elementos. Exemplo: <code>.classe { font-weight: bold; }</code></li>
+            <li><strong>ID</strong>: Identificada com "#", aplicada a um único elemento. Exemplo: <code>#id { text-align: center; }</code></li>
+        </ul>
+    </section>
+
+    <!-- Efeito Cascata -->
+    <section>
+        <h2>Efeito Cascata</h2>
+        <p>Regras definidas posteriormente no código sobrescrevem regras anteriores para o mesmo elemento.</p>
+        <p style="color: blue;">Este texto será azul.</p>
+        <p style="color: red;">Este texto será vermelho, pois foi definido depois.</p>
+    </section>
+
+    <!-- Maneiras de Escrever CSS -->
+    <section>
+        <h2>Maneiras de Escrever CSS</h2>
+        <ul>
+            <li><strong>Inline:</strong> Estilo diretamente no elemento. Exemplo: <code>&lt;p style="color: red;"&gt;Texto&lt;/p&gt;</code></li>
+            <li><strong>Interno:</strong> Dentro de uma tag <code>&lt;style&gt;</code> no cabeçalho do HTML.</li>
+            <li><strong>Externo:</strong> Em um arquivo .css vinculado. Exemplo: <code>&lt;link rel="stylesheet" href="estilo.css"&gt;</code></li>
+        </ul>
+    </section>
+
+    <!-- Ordem de Prioridade -->
+    <section>
+        <h2>Ordem de Prioridade</h2>
+        <p>Estilos inline têm a maior prioridade. Veja o exemplo abaixo:</p>
+        <p style="color: green; font-size: 20px;">Este texto está estilizado inline e sobrescreve qualquer outra regra.</p>
+    </section>
+
+    <!-- Herança -->
+    <section>
+        <h2>Herança</h2>
+        <div style="color: blue;">
+            <p>Este texto herda a cor azul do pai (div).</p>
+        </div>
+    </section>
+
+    <!-- Especificidade -->
+    <section>
+        <h2>Especificidade</h2>
+        <p class="classe" id="id">Este texto usa uma regra com ID, que tem maior prioridade.</p>
+    </section>
+
+    <!-- Unidade de Medida -->
+    <section>
+        <h2>Unidade de Medida</h2>
+        <p style="font-size: 16px;">Texto com 16px (absoluto).</p>
+        <p style="font-size: 1.5em;">Texto com 1.5em (relativo ao elemento pai).</p>
+    </section>
+
+    <!-- Box Model -->
+    <section>
+        <h2>Box Model</h2>
+        <div style="width: 100px; height: 100px; padding: 10px; border: 2px solid black; margin: 20px; background-color: lightgray;">
+            <p>Caixa com padding, border e margin.</p>
+        </div>
+    </section>
+
+    <!-- Inline e Block -->
+    <section>
+        <h2>Inline e Block</h2>
+        <span style="background-color: yellow;">Elemento Inline</span>
+        <div style="background-color: lightblue; width: 100px;">Elemento Block</div>
+    </section>
+
+    <footer>
+        <p>&copy; Cubos Academy - Csspt1</p>
+    </footer>
+</body>
+</html>

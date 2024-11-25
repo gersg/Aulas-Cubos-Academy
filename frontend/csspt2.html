@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Completa de CSS</title>
+    <!-- Estilo interno para exemplos -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #726c6c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        pre {
+            background-color: #f7f7f7;
+            padding: 15px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aula Completa de CSS</h1>
+        <p>Estilizando páginas web com CSS.</p>
+    </header>
+
+    <!-- Pseudo elementos -->
+    <section>
+        <h2>Pseudo-elementos</h2>
+        <p>Pseudo-elementos são usados para adicionar estilos a partes específicas de um elemento.</p>
+        <pre>
+/* Exemplo de pseudo-elemento */
+p::before {
+    content: "Texto antes!";
+    color: red;
+}
+        </pre>
+    </section>
+
+    <!-- Pseudo classes -->
+    <section>
+        <h2>Pseudo-classes</h2>
+        <p>Pseudo-classes são usadas para definir o estilo de um elemento em um estado específico.</p>
+        <pre>
+/* Exemplo de pseudo-classe */
+a:hover {
+    color: green;
+}
+        </pre>
+    </section>
+
+    <!-- Combinadores de seletores -->
+    <section>
+        <h2>Combinadores de Seletores</h2>
+        <p>Combinadores permitem aplicar estilos a elementos baseados em sua relação com outros elementos.</p>
+        <pre>
+/* Exemplo de combinadores */
+div > p {
+    color: blue; /* Aplica a um <p> diretamente dentro de <div> */
+}
+
+ul li {
+    list-style-type: square; /* Aplica a todos <li> dentro de <ul> */
+}
+        </pre>
+    </section>
+
+    <!-- Cores -->
+    <section>
+        <h2>Cores</h2>
+        <p>Existem várias formas de definir cores no CSS, como nomes, hexadecimal, rgb, e hsl.</p>
+        <pre>
+/* Exemplos de cores */
+p {
+    color: red; /* Cor por nome */
+    background-color: #f00; /* Cor hexadecimal */
+    border: 2px solid rgb(255, 0, 0); /* Cor RGB */
+}
+        </pre>
+    </section>
+
+    <!-- Propriedades de texto e fonte -->
+    <section>
+        <h2>Propriedades de Texto e Fonte</h2>
+        <p>Você pode controlar a aparência do texto com várias propriedades, como cor, fonte, tamanho, e alinhamento.</p>
+        <pre>
+/* Exemplos de propriedades de texto */
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+}
+        </pre>
+    </section>
+
+    <!-- Propriedades que alteram o tamanho do elemento -->
+    <section>
+        <h2>Propriedades que Alteram o Tamanho do Elemento</h2>
+        <p>Você pode controlar o tamanho de um elemento usando propriedades como largura (width), altura (height), padding e margin.</p>
+        <pre>
+/* Exemplos de propriedades de tamanho */
+div {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+}
+        </pre>
+    </section>
+
+    <!-- Outras propriedades -->
+    <section>
+        <h2>Outras Propriedades</h2>
+        <p>CSS tem uma vasta gama de propriedades que permitem personalizar ainda mais os elementos, como border-radius, box-shadow, etc.</p>
+        <pre>
+/* Exemplos de outras propriedades */
+div {
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+        </pre>
+    </section>
+
+    <!-- Reset CSS (Navegadores) -->
+    <section>
+        <h2>Reset CSS</h2>
+        <p>O reset CSS é usado para garantir que os estilos padrão dos navegadores não interfiram no design da página.</p>
+        <pre>
+/* Exemplo de reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        </pre>
+    </section>
+
+    <!-- Variáveis CSS -->
+    <section>
+        <h2>Variáveis CSS</h2>
+        <p>As variáveis CSS permitem armazenar valores que podem ser reutilizados ao longo do código.</p>
+        <pre>
+/* Exemplo de variáveis CSS */
+:root {
+    --cor-principal: #3498db;
+}
+
+div {
+    background-color: var(--cor-principal);
+}
+        </pre>
+    </section>
+
+    <!-- Documentação CSS -->
+    <section>
+        <h2>Documentação CSS</h2>
+        <p>A documentação oficial do CSS contém informações detalhadas sobre as propriedades e como usá-las.</p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">Documentação do CSS (MDN)</a></li>
+        </ul>
+    </section>
+
+    <!-- Exercícios -->
+    <section>
+        <h2>Exercícios Pt.1</h2>
+        <p>Crie uma página com um cabeçalho, um parágrafo e uma lista. Aplique estilos básicos de layout.</p>
+    </section>
+
+    <section>
+        <h2>Exercício Pt.2</h2>
+        <p>Utilize um fundo de cor diferente para cada seção. Aplique um estilo de hover nos links.</p>
+    </section>
+
+    <section>
+        <h2>Exercício Pt.3</h2>
+        <p>Crie um botão com uma borda arredondada e um efeito de transição ao passar o mouse.</p>
+    </section>
+
+    <section>
+        <h2>Exercício Pt.4</h2>
+        <p>Utilize variáveis CSS para controlar as cores do site.</p>
+    </section>
+
+    <section>
+        <h2>Exercício Pt.5</h2>
+        <p>Use a técnica de "reset CSS" para remover margens e paddings padrões do navegador.</p>
+    </section>
+
+    <section>
+        <h2>Exercício Pt.6</h2>
+        <p>Crie um layout flexível com duas colunas, uma para o conteúdo principal e outra para a barra lateral.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aula Completa de CSS</p>
+    </footer>
+</body>
+</html>
